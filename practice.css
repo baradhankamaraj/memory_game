@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.root{
+    width:100%;
+    height:100vh;
+    background-image: url('images/28256.jpg');
+    background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.scoreRoot{
+     width:100%;
+    height:100vh;
+    background-image: url('images/28256.jpg');
+    background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreRoot  #backImage{
+    width:100%;
+    height:100%;
+     position: absolute;
+
+  
+     
+}
+.scoreRoot .msg{
+    display: block;
+    position: absolute;
+    color:black;
+    width:40%;
+    text-align: center;
+   
+}
+.scoreRoot .msg h1{
+    padding-top: 40px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* background-color: red; */
+   
+}
+
+.scoreRoot .msg h2{
+    margin: 60px;
+    font-size: 3rem;
+    font-weight: bolder;
+    /* background-color: #444cf7; */
+
+  
+}
+
+.playAgain{
+    width:100%;
+    position: absolute;
+
+}
+.playAgain  img{
+    width:100%;
+    height:100%;
+   
+   
+}
+
+
+.items{
+    width:30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items h1{
+    padding-bottom: 70px;
+    font-size: 4rem;
+    
+}
+.items a img{
+    width:100%;
+    height:50%;
+    margin-top: 100px;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/28256.jpg');
+
+}
+.header{
+    width:100%;
+    /* height:50%; */
+    /* background-color: rgba(0,27,4,.8); */
+
+    background-image:url('images/topscore.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.header h1{
+    color: #fff;
+}
+#timer{
+    color:#fff;
+}
+
+#score{
+    color:#fff;
+}
+#gameContainer{
+    display: grid;
+    height:80%;
+    grid-template-columns: 110px  110px 110px 110px   ;
+    grid-template-rows:  110px 110px 110px 110px;
+    justify-content: center;
+    align-items: center;
+    gap:2em; 
+    background-color: transparent;
+    padding: 20px;
+}
+#gameContainer div{
+    display:flex;
+    border: 2px solid grey;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:120px;
+    cursor: pointer;
+   border-radius: 5px;
+}
+
+.cardBack{
+    background-color: #e5e5f7;
+
+    border-radius: 0 100px;
+    	width: 100px;
+	height: 100px;
+    background-image:  linear-gradient(135deg, #32cd32 25%, transparent 25%), linear-gradient(225deg, #32cd32 25%, transparent 25%), linear-gradient(45deg, #32cd32 25%, transparent 25%), linear-gradient(315deg, #32cd32 25%, #e5e5f7 25%);
+    transform: rotate(0deg);
+    /* background-position:  10px 0, 10px 0, 0 0, 0 0;
+
+    background-size: 10px 10px;
+    background-repeat: repeat; */
+}
+
+@media screen and (max-width:600px){
+    #gameContainer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,60px);
+    justify-content: center;
+    align-items: center;
+    gap:40px; 
+    padding-top: 0;
+}
+#gameContainer div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:100px;
+   
+}
+.header{
+    width:100%;
+    height:10%;
+    background-image:url('images/topscore.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.header h1{
+    color: #fff;
+    font-size: 22px;
+}
+#timer{
+    color:#fff;
+}
+
+#score{
+    color:#fff;
+}
+.scoreRoot .msg h2{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+.scoreRoot .msg #finalTimer{
+    padding-top: 40px;
+}
+.scoreRoot .msg h1{
+    margin-bottom: 100px;
+}
+.scoreRoot .msg{
+    display: block;
+    position: absolute;
+    color:black;
+    width:60%;
+    text-align: center;
+    
+}
+.scoreRoot  #backImage{
+    width:100%;
+    height:100%;
+     position: absolute;
+}
+
+}
